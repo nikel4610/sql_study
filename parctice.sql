@@ -1,5 +1,5 @@
-select * from sosi ;
+desc sosi;
 
-delete from sosi where salary > 9000 ;
-commit ;
+alter table sosi add hit number(3) default 0;
 select * from sosi;
+ommmit ;
