@@ -1,6 +1,6 @@
-desc sosi;
+select * from guest ;
+select * from member order by √—¡° desc;
 
-alter table sosi add hit number(3) default 0;
-select * from sosi;
+delete from member where name = '¿ÿπŸ';
 
-show user;
+select * from member order by √—¡° desc;
