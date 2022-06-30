@@ -1,4 +1,4 @@
 # sql_study
 
-table ±¸¼º, insert and select  
+create simple table, insert and select  
 DML DCL DDL  
