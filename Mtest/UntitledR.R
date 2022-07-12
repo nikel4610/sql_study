@@ -9,7 +9,7 @@ x = c('a', 'b' ,'a', 'c', 'c')
 x
 qplot(x)
 
-
+# as 생략 가능 
 mpg = as.data.frame(ggplot2::mpg)
 mpg
 head(mpg)
@@ -19,9 +19,12 @@ str(mpg)
 head(mpg, 10)
 
 mpg$total = (mpg$cty+mpg$hwy)
-mpg$avg = mpg$total/2
-View(mpg)
-head(mpg)
+mpg
+
+
+# $avg = mpg$total/2
+# View(mpg)
+# head(mpg)
 
 qplot(data = mpg, x = hwy, bins = 30)
 qplot(data = mpg, x = cty)

@@ -36,3 +36,13 @@ df_exam[15:17, 4] #[행, 열]
 
 df_exam$test = ifelse(df_exam$total > 200, '합격', '재시험')
 df_exam
+
+exam7 = read.csv('D:/rproject/sql_study/Mtest/csv_exam.csv', header = T)
+head(exam7, 3)
+tail(exam7, 3)
+exam7[1:3, ]
+
+exam7$total = exam7$english + exam7$math + exam7$science
+exam7$test = ifelse(exam7$total>200, '합격', '재시험')
+head(exam7)
+table(exam7$test)
