@@ -22,3 +22,10 @@ mpg$total = (mpg$cty+mpg$hwy)
 mpg$avg = mpg$total/2
 View(mpg)
 head(mpg)
+
+qplot(data = mpg, x = hwy, bins = 30)
+qplot(data = mpg, x = cty)
+qplot(data = mpg, x = cty, geom = 'boxplot')
+qplot(data = mpg, x = drv, y = hwy, geom = 'line')
+qplot(data = mpg, x = drv, y = hwy, geom = 'boxplot', colour = drv)
+# mpg = as.data.frame(gglpot2::mpg)
