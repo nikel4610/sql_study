@@ -9,3 +9,16 @@ x = c('a', 'b' ,'a', 'c', 'c')
 x
 qplot(x)
 
+
+mpg = as.data.frame(ggplot2::mpg)
+mpg
+head(mpg)
+tail(mpg)
+View(mpg)
+str(mpg)
+head(mpg, 10)
+
+mpg$total = (mpg$cty+mpg$hwy)
+mpg$avg = mpg$total/2
+View(mpg)
+head(mpg)
