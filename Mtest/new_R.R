@@ -46,3 +46,7 @@ exam7$total = exam7$english + exam7$math + exam7$science
 exam7$test = ifelse(exam7$total>200, '합격', '재시험')
 head(exam7)
 table(exam7$test)
+
+qplot(exam7$test)
+
+west = as.data.frame(ggplot2::mpg)
