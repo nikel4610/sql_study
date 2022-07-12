@@ -1,14 +1,11 @@
 #2022-07-12
 
-x = c(1:5)
+#ggplot 패키지 설치
+
+# installed.packages() -> 인스톨한 패키지 확인
+# install.packages('ggplot2') -> 패키지 설치
+library(ggplot2)
+x = c('a', 'b' ,'a', 'c', 'c')
 x
-sum(x)
-mean(x)
+qplot(x)
 
-y = c(90, 85)
-y
-sum(y)
-mean(y)
-
-str5 = c('hello', 'world', 'good')
-str5
