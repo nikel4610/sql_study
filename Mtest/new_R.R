@@ -15,3 +15,10 @@ str(df_exam)
 
 df_csv = read.csv('D:/rproject/sql_study/Mtest/csv_exam.csv', header = T)
 df_csv
+
+str(df_csv)
+dim(df_csv)
+summary(df_csv)
+head(df_csv) # 기본 6행으로 출력됨
+head(df_csv, 10) # 10행 출력
+
