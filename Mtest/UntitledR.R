@@ -50,3 +50,14 @@ is.factor(Ngender) # TRUE
 
 args(factor) # factor함수 매개인자 정보 출력
 
+Ogender = factor(gender, levels = c('woman', 'man'))
+par(mfrow = c(1, 2))
+plot(Ngender)
+plot(Ogender)
+
+dt = list(name='kim', wife='carry', gender=TRUE, chile.ages=c(4, 7, 9))
+dt[1]      # 'kim'
+dt['wife'] # 'carry'
+dt[3]      # TRUE
+length(dt) # 4
+
