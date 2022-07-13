@@ -73,3 +73,8 @@ sc8
 x = c(5, 10, 13, 3)
 print(x/3)
 print(x%/%2)
+
+Sys.time() # 현재 년,월,일,시,분,초 출력
+strptime('12-03-2022', format = ('%d-%m-%y'))
+
+
