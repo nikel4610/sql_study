@@ -18,7 +18,7 @@ m5
 # [1,]    1    2    3    4    5    6    7    8
 # [2,]    9   10   11   12   13   14   15   16
 
-length(m5)
+length(m5)                               
 ncol(m5)
 nrow(m5)
 
@@ -31,4 +31,21 @@ m6 = matrix(c(1:16), ncol = 2, byrow = TRUE)
 m6
 
 colnames(m6) = c('평일', '주말')
+rownames(m6) = c('서울', '제주', '울산', '경기', '대구', '인천', '서해', '남해')
 m6
+
+m6['경기', '주말']
+m6[4, 2]
+
+x = c(1:5)
+y = c(31:35)
+
+z1 = rbind(x,y) # row 먼저 채워짐
+z1
+
+z2 = cbind(x, y) # col 먼저 채워짐
+z2
+
+value = c(1:10)
+my = array(value, c(3,3,3))
+my
