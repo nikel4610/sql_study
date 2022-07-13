@@ -41,3 +41,30 @@ qplot(x)
 filter(exam, class == 1 | class == 5)
 a = exam %>% filter(class == 1 | class == 5) 
 mean(a$math)
+
+select(exam, english)
+exam %>% filter(class == 1) %>% select(english)
+exam %>% arrange(desc(math))
+exam %>% mutate(total=math+english+science)
+
+exam %>% mutate(total=math+english+science) %>% arrange(total)
+exam %>% group_by(class)
+
+# class 별로 분리
+exam %>% group_by(class) %>% summarize(mean_math = mean(math),
+                                       sum_math = sum(math),
+                                       median_math = median(math),
+                                       n = n())
+
+# join
+test1 = data.frame(id = c(1, 2, 3, 4, 5),
+                   midterm = c(60, 73, 81, 90, 80))
+test1
+
+test2 = data.frame(id = c(1, 2, 3, 4, 5),
+                   final = c(70, 50, 30, 20, 70))
+test2
+
+total = left_join(test1, test2, by='id')
+total
+
