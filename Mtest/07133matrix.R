@@ -21,5 +21,19 @@ sam1
 
 score1 = list(60, 80, 50, 90)
 score2 = list(c("kor", 'eng'))
+score1[score1>=80]
+score12 = list(score1, score2)
+score12
+
+unlist(score1)
+unlist(score2)
 score1
 score2
+
+score13 = data.frame('점수' = score1, '과목'= score2)
+score13 # array(), list(), matrix() 보다는 데이터 관리는 frame()이 가장 좋다
+
+score5 = list(2:10*10)
+score5
+score6 = list(c(2:10)*3)
+score6
