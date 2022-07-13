@@ -61,3 +61,15 @@ dt['wife'] # 'carry'
 dt[3]      # TRUE
 length(dt) # 4
 
+# 연산 사칙연산
+sc7 = list(d=2:10+5) # 리스트 안해도 됨
+sc7
+sc8 = list(c(2:10)*3)
+sc8
+
+19%/%3 # 몫
+19%%3 # 나머지
+
+x = c(5, 10, 13, 3)
+print(x/3)
+print(x%/%2)
