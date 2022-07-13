@@ -32,3 +32,21 @@ qplot(data = mpg, x = cty, geom = 'boxplot')
 qplot(data = mpg, x = drv, y = hwy, geom = 'line')
 qplot(data = mpg, x = drv, y = hwy, geom = 'boxplot', colour = drv)
 # mpg = as.data.frame(gglpot2::mpg)
+
+gender = c('man', 'woman', 'woman', 'man', 'man')
+gender
+Ngender = as.factor(gender) # 타입 변환
+Ngender
+# plot(gender) 에러
+# qplot(gender)
+
+qplot(gender)
+table(Ngender) #man woman 
+               #  3     2
+mode(Ngender) # "numeric"
+class(Ngender) # "factor"
+plot(Ngender) # factor로 변환하여 plot 사용 가능
+is.factor(Ngender) # TRUE
+
+args(factor) # factor함수 매개인자 정보 출력
+
