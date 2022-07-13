@@ -91,5 +91,32 @@ mode(data4) # "numeric"
 class(data4) # "numeric"
 typeof(data4) # "double"
 
+# 벡터 c(숫자 - 정수/ 실수, 문자, bool)
+# matrix 1차원 객체
+a = c(1:10)
+a
+m1 = matrix(a) # 행 우선으로 10행에 1열로 표시
+m1
+
+m2 = matrix(a, nrow = 2) # 2행(열부터 순서대로 채워짐)
+m2
+
+m3 = matrix(a, nrow = 3) # 빈칸은 다시 처음부터 채워짐
+m3
+
+# nrow(행 지정), ncol(열 지정)
+mt = matrix(c(1:13), nrow = 3)
+mt
+# [,1] [,2] [,3] [,4] [,5]
+# [1,]    1    4    7   10   13
+# [2,]    2    5    8   11    1
+# [3,]    3    6    9   12    2
+
+# mt[행, 열]
+mt[1, ] # 1  4  7 10 13
+mt[ ,5] # 13  1  2
+mt[2,3] # 8
+
+
 
 
