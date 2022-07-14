@@ -23,3 +23,44 @@ while(n<10) {
 # n<10 대신 TRUE 가능
 # 마지막에 {break} 꼭 넣기
 
+note = function(){
+  su1 = c(1:5)
+  for (k in su1){
+    cat(k, '회 보통 함수 note \n')
+  }
+}
+note()
+
+book = function() {
+  title = '아아아'
+  return(title)
+}
+
+myhap = function(x, y){
+  hap = x+y
+  cat('합계 = ', hap, '\n')
+}
+
+myhap(1, 2)
+
+# myFrandTotal = function(){
+#   su = c(1:10)
+#   total = 0
+#   for (i in su){
+#     total = total + i
+#   }
+#   avg = total/10
+#   cat("total = ",total,'\n')
+#   cat("avg = ", avg)
+# }
+
+# myFrandTotal()
+
+myGrandTotal = function(i,j){
+  hap = sum(i:j)
+  avg = mean(i:j)
+  cat('합계=',hap,'평균=',avg)
+}
+myGrandTotal(1,10)
+
+
