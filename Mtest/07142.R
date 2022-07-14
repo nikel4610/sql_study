@@ -63,4 +63,17 @@ myGrandTotal = function(i,j){
 }
 myGrandTotal(1,10)
 
+myTest = function(...){
+  data = c(...)
+  hap = 0
+  for(k in data){
+    if(is.numeric(k)){
+      hap = hap + k
+    }
+      cat('합계 = ', hap, '\n')
+  }
+}
+
+myTest(3, 2, 1, 4, 5)
+
 
